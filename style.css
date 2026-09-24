@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 6%;
+    background: rgba(13, 13, 13, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgb(105, 105, 99);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c9a227;
+}
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 20px 60px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.9)
+    );
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)), url(barber.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content p:first-child {
+    color: #c9a227;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #cccccc;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c9a227;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+}
+.servicos {
+    padding: 100px 6%;
+    text-align: center;
+    background-color: #111111;
+}
+
+.servicos h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.servico {
+    padding: 35px 25px;
+    background-color: #181818;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-8px);
+    border-color: #c9a227;
+}
+
+.servico h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.servico span {
+    color: #c9a227;
+    font-size: 20px;
+    font-weight: bold;
+}
+.agendamento {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: 0d0d0d;
+
+}
+.agendamento h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.agendamento > p {
+    color: #999999;
+    margin-bottom: 40px;
+}
+.agendamento form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.agendamento input,
+.agendamento select {
+    width: 100%;
+    padding: 16px;
+    background-color: #181818;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+.agendamento input:focus,
+.agendamento select:focus {
+    border-color: #c9a227;
+}
+.agendamento button {
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c9a227;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3;
+}
+.agendamento button:hover {background-color: #ffffff;}
+.contato {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #111111;
+}
+
+.contato h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.contato > p {
+    color: #999999;
+    margin-bottom: 40px;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contato-info p {
+    color: #cccccc;
+}
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #080808;
+    border-top: 1px solid #222222;
+}
+footer p {
+    color: #666666;
+    font-size: 13px;
+}
+@media (max-width: 768px) {
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+.botao {
+    box-shadow: 0 5px 20px rgba(201, 162, 39, 0.25);
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(201, 162, 39, 0.4);
+}
+
+.agendamento button {
+    box-shadow: 0 5px 20px rgba(201, 162, 39, 0.2);
+}
+
+.agendamento button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(201, 162, 39, 0.35);
+}
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.botao,
+button {
+    font-weight: 700;
+}
+html {
+    scroll-behavior: smooth;
+}
+.data-horario {display: none;
+gap: 15px;}
+.data-horario input {flex:1}
